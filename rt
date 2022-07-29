@@ -1,0 +1,12 @@
+#!/bin/sh
+while true; do
+    touch /home/wizice/tuna_vpix/tuna_vpix.wsgi
+    echo `date '+%F %r'`
+    read -p "Continue ?" yn
+    case $yn in
+        * ) continue;;
+        [Nn]* ) exit;;
+    esac
+    #sleep $1;
+done
+

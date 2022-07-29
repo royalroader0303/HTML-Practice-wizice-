@@ -1,0 +1,10 @@
+#!/bin/sh
+
+export BACKUP_FILE=/home/wizice/backup/hello_`date '+%Y%m%d'`$1.tgz
+
+echo "backup reason?"
+read REASON
+echo "`date '+%Y%m%d'`:$REASON" >> history.txt
+
+tar zcvf $BACKUP_FILE *hello*.py history.txt templates  static/assets/js batch
+ls -al  $BACKUP_FILE

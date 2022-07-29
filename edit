@@ -1,0 +1,3 @@
+#!/bin/sh
+export QNALIB=/home/wizice/venv3/lib/python3.7/site-packages/qnalib
+vi hello.py *hello*.py  $QNALIB/*.py

@@ -1,0 +1,3 @@
+#tail -f /var/log/apache2/tuna_vpix.access.log
+#tail -f /var/log/apache2/tuna_vpix.error.log log/tuna_vpix.log 
+tail -f /home/wizice/tuna_vpix/log/tuna_vpix.error.log /home/wizice/tuna_vpix/log/tuna_vpix.log 
